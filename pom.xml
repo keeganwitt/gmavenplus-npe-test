@@ -34,8 +34,19 @@
                     <version>1.6</version>
                     <executions>
                         <execution>
+                            <id>scripts</id>
+                            <configuration>
+                                <scripts>
+                                     <script>
+                                         <![CDATA[
+                                             println "foobar"
+                                         ]]>
+                                     </script>
+                                 </scripts>
+                            </configuration>
+                            <phase>compile</phase>
                             <goals>
-                                <goal>compile</goal>
+                                <goal>execute</goal>
                             </goals>
                         </execution>
                     </executions>
